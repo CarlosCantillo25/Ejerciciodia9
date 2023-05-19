@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form&map</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Obra social para programadores</h1>
+        </header>
+        
+    <form action="./show_data.html" method="get">
+        <div class="mapa">
+            <h2>Museo del caribe, Gabriel Garcia Marquez</h2>
+            <h3>Tel <a href="tel:60553720581">60553720581</a> </h3>
+            <h4>Email <a href="mailto:paquecultural@caribecultural.com">paquecultural@caribecultural.com</a></h4>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15666.785651155311!2d-74.778565!3d10.986272!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8ef4329d1797a8cf%3A0xce5d63bd3ee9e4fe!2sMuseo%20del%20Caribe%2C%20Gabriel%20Garc%C3%ADa%20M%C3%A1rquez!5e0!3m2!1ses-419!2sco!4v1684374807609!5m2!1ses-419!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="forma">
+            <fieldset class="form1">
+                <legend>Datos Personales</legend>
+                <label for="name">Nombre</label>
+                <input type="text" id="name" name="name" placeholder="Ingresa nombre">                
+                <label for="lastname">Apellido</label>
+                <input type="text" id="lastname" name="lastname" placeholder="Ingresa apellido">                
+                <label for="phone">Telefono</label>
+                <input type="text" id="phone" name="phone" placeholder="Ingresa numero">                
+                <label for="email">Correo</label>
+                <input type="text" id="email" name="email" placeholder="Ingresa correo">               
+                <label for="age">F. de nacimiento</label>
+                <input type="date" id="age" name="age"> 
+            </fieldset>
+            <fieldset class="form2">
+                <legend>Genero</legend>
+                <label for="masculino"> Masculino </label>
+                <input type="radio" id="masculino" name="sexo" value="M">
+                <label for="femenino">Femenino</label>
+                <input type="radio" id="femenino" name="sexo" value="F">
+                <label for="Otros">Otros</label>
+                <input type="radio" id="Otros" name="sexo" value="O">
+            </fieldset>
+            <fieldset class="form3">
+                <legend>Donaciones</legend>
+                <label for="$10">10 usd</label>
+                <input type="checkbox" id="$10" name="donaciones" value="10usd">
+                <label for="ropa">Prendas de vestir</label>
+                <input type="checkbox" id="ropa" name="donaciones" value="ropa">
+                <label for="comida">Comida</label>
+                <input type="checkbox" id="comida" name="donaciones" value="Comida">
+            </fieldset>
+            <fieldset class="comentarios">
+                <legend>Comentarios</legend>
+                <label for="message"> </label>
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="write your message"></textarea>
+            </fieldset>
+            <input class="submit" type="submit" value="Enviar">
+        </div>
+    </form>
+    </main>
+    
+    <footer>Created by: Carlos Cantillo</footer>
+</body>
+</html>
